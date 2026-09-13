@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechEducation - Prática de Seletores CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <nav class="navbar">
+      <!-- Usando seletores descendentes -->
+      <a href="#" class="logo">TechEducation</a>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+        <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>Bem-vindo ao TechEducation</h1>
+      <p class="hero-subtitle">Aprenda Desenvolvimento Web com os Melhores</p>
+      <button class="btn btn-primario btn-grande">Comece Agora</button>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO DE CURSOS ========== -->
+  <section class="secao-cursos" id="cursos">
+    <div class="container">
+      <h2>Nossos Cursos</h2>
+      <p class="secao-descricao">Escolha entre nossos cursos especializados</p>
+
+      <!-- Grid de Cursos -->
+      <div class="cursos-grid">
+        <!-- Card 1 -->
+        <div class="card-curso">
+          <div class="card-header">
+            <h3>HTML & CSS Fundamentals</h3>
+            <span class="badge badge-iniciante">Iniciante</span>
+          </div>
+
+          <p class="card-descricao">
+            Aprenda os fundamentos de HTML e CSS para criar suas primeiras páginas web.
+          </p>
+
+          <ul class="card-lista">
+            <li>Semântica HTML</li>
+            <li>Seletores CSS</li>
+            <li>Box Model</li>
+            <li>Responsividade</li>
+          </ul>
+
+          <div class="card-footer">
+            <span class="preco">R$ 99,90</span>
+            <button class="btn btn-primario btn-pequeno">Detalhes</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-curso card-curso-destaque">
+          <div class="card-header">
+            <h3>CSS Avançado</h3>
+            <span class="badge badge-intermediario">Intermediário</span>
+          </div>
+
+          <p class="card-descricao">
+            Domine Flexbox, Grid, animações e técnicas avançadas de CSS.
+          </p>
+
+          <ul class="card-lista">
+            <li>Flexbox & Grid</li>
+            <li>Especificidade e Cascata</li>
+            <li>Animações CSS</li>
+            <li>Preprocessadores</li>
+          </ul>
+
+          <div class="card-footer">
+            <span class="preco">R$ 149,90</span>
+            <button class="btn btn-primario btn-pequeno">Detalhes</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-curso">
+          <div class="card-header">
+            <h3>JavaScript Completo</h3>
+            <span class="badge badge-avancado">Avançado</span>
+          </div>
+
+          <p class="card-descricao">
+            Torne-se um desenvolvedor JavaScript profissional com este curso intensivo.
+          </p>
+
+          <ul class="card-lista">
+            <li>Fundamentos de JS</li>
+            <li>DOM e Eventos</li>
+            <li>APIs Modernas</li>
+            <li>Frameworks Populares</li>
+          </ul>
+
+          <div class="card-footer">
+            <span class="preco">R$ 199,90</span>
+            <button class="btn btn-primario btn-pequeno">Detalhes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO SOBRE ========== -->
+  <section class="secao-sobre" id="sobre">
+    <div class="container">
+      <h2>Por Que Nos Escolher?</h2>
+
+      <div class="sobre-cards">
+        <!-- Card 1 -->
+        <div class="sobre-card">
+          <div class="card-numero">01</div>
+          <h3>Professores Experientes</h3>
+          <p>
+            Aprenda com profissionais com mais de 10 anos de experiência 
+            em desenvolvimento web.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="sobre-card">
+          <div class="card-numero">02</div>
+          <h3>Conteúdo Atualizado</h3>
+          <p>
+            Nosso currículo é atualizado regularmente para acompanhar 
+            as tendências da indústria.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="sobre-card">
+          <div class="card-numero">03</div>
+          <h3>Suporte 24/7</h3>
+          <p>
+            Contamos com uma comunidade ativa e suporte técnico sempre 
+            disponível para ajudar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FORMULÁRIO DE CONTATO ========== -->
+  <section class="secao-contato" id="contato">
+    <div class="container">
+      <h2>Entrar em Contato</h2>
+      <p class="secao-descricao">Ficou com dúvidas? Entre em contato conosco</p>
+
+      <form class="formulario">
+        <div class="form-group">
+          <label for="nome">Nome Completo *</label>
+          <input 
+            type="text" 
+            id="nome" 
+            name="nome" 
+            placeholder="Seu nome" 
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="seu@email.com" 
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option value="">Selecione um assunto</option>
+            <option value="duvida">Dúvida sobre Curso</option>
+            <option value="tecnico">Problema Técnico</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem *</label>
+          <textarea 
+            id="mensagem" 
+            name="mensagem" 
+            placeholder="Sua mensagem aqui..." 
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group checkbox">
+          <input type="checkbox" id="termos" name="termos" required>
+          <label for="termos">Concordo em receber comunicações</label>
+        </div>
+
+        <button type="submit" class="btn btn-sucesso btn-grande">
+          Enviar Mensagem
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>TechEducation</h4>
+          <p>Transformando vidas através da educação em tecnologia.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:contato@teched.com">contato@teched.com</a></li>
+            <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+            <li>São Paulo, SP</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 TechEducation. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

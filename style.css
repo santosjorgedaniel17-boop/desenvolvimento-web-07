@@ -1,0 +1,81 @@
+:root {
+            --cor-rgb: rgb(0, 100, 250);
+            --cor-hsl: hsl(0, 0%, 0%);
+        }
+header {
+            background-color: #3722c2;
+            color: #0c0355;
+            padding: 5px;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+        }
+header nav a {
+            background-color: #f5f5f7;
+            text-decoration: none;
+            color: #0385f0;
+            font-weight: bold;
+        }
+        header ul li a:hover {
+            color: #57920a;
+            background-color: #fafafa;
+            border-radius: 4px;
+            padding: 5px;
+        }
+header li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header h1 {
+            color: #ffffff;
+            background-color: var(--cor-hex);
+            padding: 20px;
+            margin: 0;
+        }
+h1::after {
+    content: "  sua escola virtual";
+    color: blueviolet;
+}
+
+nav {
+            background-color: #f0f0f0;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+li {
+            display: inline;
+            margin-right: 15px;
+        }
+.btn-primario {
+            background-color:#f0f0f0 ;
+        }
+.form-group input:focus{
+    outline: none;
+}
+
+body {
+            font-family: 'Inter', sans-serif;
+            color: var(--cor-hsl);
+            line-height: 1.8;
+            background-color: #faf9f6;
+            margin: 40px;
+        }
+.btn-primario:hover {
+            background-color: #49555e;
+        }
+.btn.btn-primario {
+            color: #6398a5;
+            padding: 10px 20px;
+            border: 2px solid #0d0d0e;
+            border-radius: 26px;
+            cursor: pointer;
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            color: var(--cor-rgb);
+        }
